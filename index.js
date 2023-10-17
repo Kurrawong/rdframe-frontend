@@ -123,10 +123,12 @@ async function populateProfiles() {
                 await updateEditorWithData(profile, column, editor);
 
                 if (['profile', 'sparql'].includes(column)) {
-                    setupEditorAutoUpdate(editor, profile, column);
                     topRow.appendChild(columnDiv);
                 } else {
                     bottomRow.appendChild(columnDiv);
+                }
+                if (['profile', 'example_data'].includes(column)) {
+                    setupEditorAutoUpdate(editor, profile, column);
                 }
             }
 

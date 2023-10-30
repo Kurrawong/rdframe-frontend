@@ -56,7 +56,7 @@ ul.tabs li.tab a.active {
 
 .row {
     height: 40%;  /* Each row takes up half the vertical space */
-    margin: 30px;
+    margin: 05px;
     display: flex;
     flex-direction: row;
 }
@@ -69,4 +69,22 @@ ul.tabs li.tab a.active {
 
 h3 {
     margin-bottom: 10px;  /* Added a margin to separate the headings from the content below */
+}
+
+.endpoint_definition-editor,
+.profile-editor,
+.sparql-editor,
+.example_data-editor,
+.results-editor {
+    height: 100%;
+}
+
+.top-left-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.endpoint_definition-row {
+    flex-grow: 1;
 }
